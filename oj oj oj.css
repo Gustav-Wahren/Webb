@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+     margin: 0; 
+     padding: 0; }
+.container {
+    display: grid;
+    grid-template: 130px 400px 120px  / 15px 2fr 1fr 15px;
+    grid-template-areas: 
+    "top top top top"
+    "side1 left right side2"
+    "rock rock rock rock";
+    gap: 8px;}
+.top
+    { grid-area: top;
+    background-color: cadetblue;}
+.left
+    { grid-area: left;
+    background-color: aliceblue;}
+.right
+    {grid-area: right; 
+    background-color: aliceblue;}
+.rock
+    {grid-area: rock; 
+    background-color: darkslategrey;}
+.side1 
+    {grid-area: side1;
+    background-color:white;}
+.side2 
+    {grid-area: side2;
+    background-color:white;}
+.img    
+    {height: 400px;}
